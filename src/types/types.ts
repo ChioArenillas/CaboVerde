@@ -6,6 +6,12 @@ export interface Tab {
   icon: string;
 }
 
+export interface Esfuerzo  {
+      porcentaje: string,
+      title: string,
+      text: string
+}
+
 export interface ItineraryItem {
   day: string;
   title: string;
@@ -26,9 +32,33 @@ export interface MoodItemData {
   desc: string;
 }
 
-export interface InfoItemData {
+
+export interface DocumentationItem {
   title: string;
   desc: string;
+}
+
+export interface DocumentationData {
+  documentation: DocumentationItem[];
+}
+
+export interface AppItem {
+  name: string;
+  desc: string;
+}
+
+export interface AppsData {
+  sim: string;
+  apps: AppItem[];
+}
+export interface MoneyData{
+  currency: string,
+    recommendation: string,
+  commonFund: {
+    amount: string,
+    intro: string,
+    description: string
+}
 }
 
 export interface CheckItemData {

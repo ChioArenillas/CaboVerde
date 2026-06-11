@@ -1,48 +1,39 @@
 import { MoodItemData } from "@/types/types";
 import { Card } from "../ui/Card";
 import { MoodItem } from "../ui/MoodItem";
+import { esfuerzo, moods } from "@/data/data";
 
 export function InicioSection() {
-  const moods: MoodItemData[] = [
-    {
-      icon: "🌴",
-      title: "Relax",
-      desc: "Playas paradisíacas y atardeceres infinitos.",
-    },
-    {
-      icon: "🤙",
-      title: "Buen Rollo",
-      desc: "Grupo pequeño y ambiente familiar.",
-    },
-    {
-      icon: "🌊",
-      title: "Aventura Suave",
-      desc: "Excursiones accesibles para todos.",
-    },
-  ];
+  
 
   return (
     <div className="space-y-8">
       <Card title="¿Qué es WeRoad?">
         <p>
-          WeRoad organiza viajes de aventura en grupo. Su enfoque es
-          proporcionar experiencias auténticas y emocionantes, permitiendo a los
-          participantes explorar destinos de todo el mundo junto a otros
-          viajeros que comparten intereses similares. Los viajes están guiados
-          por Coordinadores, quienes actúan como líderes del grupo y compañeros
-          de viaje, fomentando una atmósfera de camaradería y descubrimiento
-          compartido. La filosofía de WeRoad se centra en vivir aventuras
-          juntos, compartiendo nuevas experiencias y emociones mientras se
-          exploran destinos a menudo por primera vez tanto para los
-          coordinadores como para los participantes.
+          WeRoad organiza viajes de aventura en grupo para descubrir destinos de
+          forma auténtica junto a otros viajeros con intereses similares. La
+          idea es vivir experiencias, conocer gente y disfrutar del viaje
+          juntos. En muchos casos, tanto para los coordinadores como para los
+          participantes, también es la primera vez en el destino.
+        </p>
+        <p className="mt-3">
+          Los viajes cuentan con un itinerario previamente diseñado para que el
+          grupo pueda aprovechar al máximo la experiencia. Por ello, las
+          actividades y rutas previstas no pueden modificarse según las
+          preferencias individuales. Aun así, siempre intentaremos adaptarnos a
+          las circunstancias del grupo y ser flexibles cuando la logística y la
+          situación lo permitan.
         </p>
       </Card>
 
       <Card title="¿Cuál es mi papel como coordinadora?">
         <p>
-          Este es mi 12º viaje como coordinadora de WeRoad. No soy un guía de
-          viaje experta, por eso contamos con guías locales durante el viaje.
-          También es mi primera vez en el destino al igual que vosotros.
+          Los viajes están gestionados por Coordinadores, quienes actúan como
+          líderes del grupo y compañeros de viaje, fomentando una atmósfera de
+          camaradería y descubrimiento compartido. Este es mi 12º viaje como
+          coordinadora de WeRoad. No soy un guía de viaje experta, por eso
+          contamos con guías locales durante el viaje. También es mi primera vez
+          en el destino al igual que vosotros.
         </p>
         <p className="mt-3">
           Gestiono parte del itinerario, el fondo común y sobre todo el grupo y
@@ -70,15 +61,13 @@ export function InicioSection() {
           <div className="flex-1 bg-gray-200 rounded-full h-4 overflow-hidden">
             <div
               className="bg-green-500 h-full rounded-full"
-              style={{ width: "40%" }}
+              style={{ width: esfuerzo.porcentaje }}
             ></div>
           </div>
-          <span className="text-sm font-bold text-green-600">BAJO - MEDIO</span>
+          <span className="text-sm font-bold text-green-600">{esfuerzo.title}</span>
         </div>
         <p>
-          Itinerario relajado 360°. Ritmo tranquilo para disfrutar de la isla
-          sin prisas, con excursiones suaves y mucho tiempo de playa. ¡La
-          combinación perfecta!
+          {esfuerzo.text}
         </p>
       </Card>
     </div>

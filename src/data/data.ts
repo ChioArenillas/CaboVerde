@@ -1,6 +1,6 @@
 // --- DATA ---
 
-import { ItineraryItem, ServiceItem, Tab } from "@/types/types";
+import { AppsData, DocumentationData, Esfuerzo, ItineraryItem, MoneyData, MoodItemData, ServiceItem, Tab } from "@/types/types";
 
 export const heroImage = "/embarcaciones-pequenas-agua-turquesa-cielo-nublado.jpg";
 
@@ -15,6 +15,31 @@ export const tabs: Tab[] = [
   { id: "info", label: "Info Práctica", icon: "ℹ️" },
   { id: "equipaje", label: "Equipaje", icon: "🎒" },
 ];
+
+export const moods: MoodItemData[] = [
+    {
+      icon: "🌴",
+      title: "Relax",
+      desc: "Playas paradisíacas y atardeceres infinitos.",
+    },
+    {
+      icon: "🤙",
+      title: "Buen Rollo",
+      desc: "Grupo pequeño y ambiente familiar.",
+    },
+    {
+      icon: "🌊",
+      title: "Aventura Suave",
+      desc: "Excursiones accesibles para todos.",
+    },
+  ];
+
+export const esfuerzo: Esfuerzo = {
+      porcentaje: "40%",
+      title: "BAJO - MEDIO",
+      text: "Itinerario relajado 360°. Ritmo tranquilo para disfrutar de la isla sin prisas, con excursiones suaves y mucho tiempo de playa. ¡La combinación perfecta!"
+    }
+
 
 export const itineraryData: ItineraryItem[] = [
   {
@@ -152,3 +177,48 @@ export const servicesData: ServiceItem[] = [
     payment: "Incluido",
   },
 ];
+
+export const documentationData: DocumentationData = {
+
+  documentation: [
+    {
+      title: "Pasaporte",
+      desc: "En perfecto estado, con al menos 6 meses de vigencia residual. Siempre contigo.",
+    },
+    {
+      title: "Visa",
+      desc: "No necesaria para ciudadanos españoles en viajes turísticos de hasta 90 días.",
+    },
+  ],
+}
+
+export const appsData: AppsData = {
+    sim:
+      "Recomendado usar eSIM (Holafly, Airalo) antes de viajar para tener datos desde el aterrizaje.",
+
+    apps: [
+      {
+        name: "WhatsApp",
+        desc: "Comunicación del grupo.",
+      },
+      {
+        name: "Bolt",
+        desc: "Taxi/VTC en la isla.",
+      },
+      {
+        name: "Google Maps",
+        desc: "Orientación en destino.",
+      },
+    ],
+}
+
+  export const moneyData: MoneyData = {
+  currency: "Escudo caboverdiano (CVE)",
+  recommendation: "El euro también es ampliamente aceptado en la mayoría de hoteles, restaurantes y tiendas turísticas. Recomendación: lleva algo de efectivo en euros para pequeñas compras y propinas. Tarjetas como Revolut o N26 funcionan bien para sacar dinero sin comisiones.",
+  commonFund: {
+    amount: "~200€",
+    intro: "Como ya sabéis tenemos un fondo común que se paga por Bizum al coordinador, quien es el responsable de gestionarlo.",
+    description: "Se usa para todos los gastos en los que participemos como grupo: entradas a los sitios de visita, transportes comunes, actividades extra y el fondo del coordinador.",
+  },
+};
+
