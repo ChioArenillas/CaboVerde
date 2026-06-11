@@ -61,6 +61,11 @@ export interface MoneyData{
 }
 }
 
+export interface Temperatura{
+    icono: string,
+    grados: string,
+    text: string
+}
 export interface CheckItemData {
   text: string;
 }

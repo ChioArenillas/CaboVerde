@@ -1,6 +1,5 @@
-// --- DATA ---
 
-import { AppsData, DocumentationData, Esfuerzo, ItineraryItem, MoneyData, MoodItemData, ServiceItem, Tab } from "@/types/types";
+import { AppsData, DocumentationData, Esfuerzo, ItineraryItem, MoneyData, MoodItemData, ServiceItem, Tab, Temperatura } from "@/types/types";
 
 export const heroImage = "/embarcaciones-pequenas-agua-turquesa-cielo-nublado.jpg";
 
@@ -221,4 +220,28 @@ export const appsData: AppsData = {
     description: "Se usa para todos los gastos en los que participemos como grupo: entradas a los sitios de visita, transportes comunes, actividades extra y el fondo del coordinador.",
   },
 };
+
+export const temperatura: Temperatura = {
+    icono: "☀️",
+    grados: "25ºC - 30ºC",
+    text: "Clima cálido todo el año con brisa marina constante."
+}
+  export const checklist: string[] = [
+    "Mochila o maleta mediana (las habitaciones pueden tener poco espacio).",
+    "Ropa de verano total, bañadores y ropa ligera.",
+    "Gorra o sombrero y gafas de sol.",
+    "Cortavientos o chaqueta fina (por la brisa nocturna).",
+    "Zapatillas cómodas y sandalias de playa.",
+    "Crema de sol +50 (¡el sol pega fuerte!).",
+    "Adaptador de enchufe tipo C/E/F (aunque los hoteles suelen tener europeos).",
+  ];
+
+  export const meds: string[] = [
+    "Ibuprofeno",
+    "Paracetamol",
+    "Fortasec",
+    "Suero Oral",
+    "Antihistamínicos",
+    "Tiritas",
+  ];
 
