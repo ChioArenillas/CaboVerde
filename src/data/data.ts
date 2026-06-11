@@ -87,80 +87,114 @@ export const servicesData: ServiceItem[] = [
   {
     day: "Sábado 18",
     where: "Santa Maria",
-    service: "Llegada y traslado al hotel",
+    service: "Noche de hotel",
     meals: "-",
-    payment: "Incluido",
-  },
-  {
-    day: "Sábado 18",
-    where: "Santa Maria",
-    service: "Welcome Meeting y Cena de bienvenida",
-    meals: "Cena",
-    payment: "Fondo común",
-  },
-  {
-    day: "Domingo 19",
-    where: "Santa Maria",
-    service: "Día de playa en Santa Maria",
-    meals: "Desayuno",
     payment: "Incluido",
   },
   {
     day: "Domingo 19",
     where: "Santa Maria",
-    service: "Paseo por el pueblo y muelle",
+    service: "Excursión de día completo para visitar la isla con transporte.",
+    meals: "Desayuno y Almuerzo",
+    payment: "Incluido",
+  },
+  {
+    day: "Domingo 19",
+    where: "Santa Maria",
+    service: "Noche de hotel",
     meals: "-",
     payment: "Incluido",
   },
+
+
   {
     day: "Lunes 20",
-    where: "Pedra de Lume",
-    service: "Excursión a las Salinas de Pedra de Lume",
-    meals: "Desayuno",
-    payment: "Fondo común",
-  },
-  {
-    day: "Martes 21",
-    where: "Desierto de Viana",
-    service: "Ruta en 4x4 por el Desierto de Viana",
-    meals: "Desayuno",
-    payment: "Fondo común",
-  },
-  {
-    day: "Martes 21",
-    where: "Desierto de Viana",
-    service: "Visita al naufragio Cabo Santa Maria",
-    meals: "-",
-    payment: "Fondo común",
-  },
-  {
-    day: "Miércoles 22",
-    where: "Santa Maria",
-    service: "Día libre (actividades opcionales)",
-    meals: "Desayuno",
-    payment: "Incluido",
-  },
-  {
-    day: "Jueves 23",
     where: "Buracona",
     service: "Ruta en Quad por la isla",
     meals: "Desayuno",
     payment: "Fondo común",
   },
+    {
+    day: "Lunes 20",
+    where: "Santa Maria",
+    service: "Noche de hotel",
+    meals: "-",
+    payment: "Incluido",
+  },
+
+
+  {
+    day: "Martes 21",
+    where: "",
+    service: "Excursión de esnórquel con equipo de esnórquel",
+    meals: "-",
+    payment: "Incluido",
+  },
+    {
+    day: "Martes 21",
+    where: "",
+    service: "Clase de baile",
+    meals: "-",
+    payment: "Fondo común",
+  },
+
+    {
+    day: "Martes 21",
+    where: "",
+    service: "Cóctel de bienvenida al atardecer",
+    meals: "-",
+    payment: "Incluido",
+  },
+      {
+    day: "Martes 21",
+    where: "Santa Maria",
+    service: "Noche de hotel",
+    meals: "-",
+    payment: "Incluido",
+  },
+
+
+
+  {
+    day: "Miércoles 22",
+    where: "",
+    service: "Excursión de medio día en catamarán con transporte de ida y vuelta para el puerto y barra libre de bebidas y snack",
+    meals: "Desayuno",
+    payment: "Incluido",
+  },
+        {
+    day: "Miércoles 22",
+    where: "Santa Maria",
+    service: "Noche de hotel",
+    meals: "-",
+    payment: "Incluido",
+  },
+
+
   {
     day: "Jueves 23",
-    where: "Buracona",
-    service: "Visita a la piscina natural de Buracona",
+    where: "",
+    service: "Clases de surf/windsurf",
     meals: "-",
     payment: "Fondo común",
   },
   {
     day: "Jueves 23",
-    where: "Buracona",
-    service: "Almuerzo típico caboverdiano",
-    meals: "Almuerzo",
-    payment: "Fondo común",
+    where: "",
+    service: "Cata de 2 cervezas locales, 2 zumos naturales y 2 tapas",
+    meals: "Desayuno",
+    payment: "Incluido",
   },
+          {
+    day: "Jueves 23",
+    where: "Santa Maria",
+    service: "Noche de hotel",
+    meals: "-",
+    payment: "Incluido",
+  },
+
+
+
   {
     day: "Viernes 24",
     where: "Santa Maria",
@@ -168,10 +202,20 @@ export const servicesData: ServiceItem[] = [
     meals: "Desayuno",
     payment: "Incluido",
   },
+            {
+    day: "Viernes 24",
+    where: "Santa Maria",
+    service: "Noche de hotel",
+    meals: "-",
+    payment: "Incluido",
+  },
+
+
+
   {
     day: "Sábado 25",
-    where: "Aeropuerto",
-    service: "Traslado al aeropuerto y despedida",
+    where: "",
+    service: "Despedida y fin del viaje",
     meals: "Desayuno",
     payment: "Incluido",
   },
