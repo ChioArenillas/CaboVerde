@@ -24,7 +24,7 @@ export function EquipajeSection() {
         </ul>
       </Card>
 
-      <Card title="Medicamentos">
+      <Card title="💊 Medicamentos">
         <p className="mb-4">
           Botiquín básico según necesidades personales. Se recomienda:
         </p>
@@ -34,7 +34,7 @@ export function EquipajeSection() {
               key={med}
               className="bg-red-50 text-red-700 px-4 py-2 rounded-lg text-sm font-medium text-center border border-red-100"
             >
-              💊 {med}
+               {med}
             </div>
           ))}
         </div>
