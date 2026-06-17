@@ -9,9 +9,9 @@ export const tripDates = "18 - 25 Julio 2026";
 
 export const tabs: Tab[] = [
   { id: "inicio", label: "Inicio", icon: "🏠" },
+  { id: "info", label: "Info Práctica", icon: "ℹ️" },
   { id: "itinerario", label: "Itinerario", icon: "🗺️" },
   { id: "servicios", label: "Servicios", icon: "🏨" },
-  { id: "info", label: "Info Práctica", icon: "ℹ️" },
   { id: "equipaje", label: "Equipaje", icon: "🎒" },
 ];
 
@@ -53,8 +53,9 @@ export const itineraryData: ItineraryItem[] = [
   },
   {
     day: "Lunes 20",
-    title: "Salinas de Pedra de Lume",
-    desc: "Excursión al cráter volcánico de Pedra de Lume. Flotaremos en sus aguas saladas. Por la tarde, tiempo libre para disfrutar de la playa.",
+    title: "Ruta en Quad y Buracona",
+    desc: "Excursión en quad por la isla hasta la piscina natural de Buracona (Blue Eye). Almuerzo típico caboverdiano en un restaurante local.",
+
   },
   {
     day: "Martes 21",
@@ -68,8 +69,8 @@ export const itineraryData: ItineraryItem[] = [
   },
   {
     day: "Jueves 23",
-    title: "Ruta en Quad y Buracona",
-    desc: "Excursión en quad por la isla hasta la piscina natural de Buracona (Blue Eye). Almuerzo típico caboverdiano en un restaurante local.",
+    title: "Salinas de Pedra de Lume",
+    desc: "Excursión al cráter volcánico de Pedra de Lume. Flotaremos en sus aguas saladas. Por la tarde, tiempo libre para disfrutar de la playa.",
   },
   {
     day: "Viernes 24",
@@ -222,7 +223,6 @@ export const servicesData: ServiceItem[] = [
 ];
 
 export const documentationData: DocumentationData = {
-
   documentation: [
     {
       title: "Pasaporte",
@@ -230,23 +230,45 @@ export const documentationData: DocumentationData = {
     },
     {
       title: "Visa",
-      desc: "No necesaria para ciudadanos españoles en viajes turísticos de hasta 90 días.",
+      desc: "No necesaria para ciudadanos españoles.",
     },
-  ],
-}
-
+{
+  title: "Carnet de Conducir",
+  desc: (
+    <>
+      <span className="text-red-500 font-bold">¡IMPORTANTE!</span>{" "}
+      Es obligatorio para la excursión en buggies, nos lo pedirán.
+      No es necesario el internacional.
+    </>
+  )
+},
+{
+  title: "Tasa aeroportuaria (31 €)",
+  desc: (
+    <>
+      Debe abonarse antes del viaje en{" "}
+      <a
+        href="https://www.ease.gov.cv"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sky-600 font-semibold hover:text-sky-800 underline"
+      >
+        www.ease.gov.cv
+      </a>
+      , preferiblemente con al menos 5 días de antelación.
+    </>
+  ),
+},  
+],
+};
 export const appsData: AppsData = {
     sim:
-      "Recomendado usar eSIM (Holafly, Airalo) antes de viajar para tener datos desde el aterrizaje.",
 
+      "En Santa Maria hay una tienda donde podéis conseguir una SIM local por unos 10 € con 5 GB de datos, más 2 € por la tarjeta SIM. También existen opciones de eSIM online, pero suelen ser más caras y algunos viajeros han reportado un rendimiento irregular en comparación con las SIM locales.",
     apps: [
       {
         name: "WhatsApp",
         desc: "Comunicación del grupo.",
-      },
-      {
-        name: "Bolt",
-        desc: "Taxi/VTC en la isla.",
       },
       {
         name: "Google Maps",
@@ -256,33 +278,62 @@ export const appsData: AppsData = {
 }
 
   export const moneyData: MoneyData = {
-  currency: "Escudo caboverdiano (CVE)",
-  recommendation: "El euro también es ampliamente aceptado en la mayoría de hoteles, restaurantes y tiendas turísticas. Recomendación: lleva algo de efectivo en euros para pequeñas compras y propinas. Tarjetas como Revolut o N26 funcionan bien para sacar dinero sin comisiones.",
+  currency: "Escudo caboverdiano (CVE)  (1€ = 110 escudos)",
+  recommendation: (
+    <>
+    <p>Los euros son aceptados en muchos lugares, pero en restaurantes es mejor cambiarlo a la moneda local (especialmente en zonas poco turísticas). Los euros pueden aceptarse, pero normalmente con un tipo de cambio menos favorable (1 € = 100 escudos). La mayoría de los restaurantes aceptan pago con tarjeta, aunque algunos pueden aplicar una comisión del 5%. </p>
+    <p>Se prevee unos <span className="font-bold">300€</span> para los gastos del día a día (comidas y recuerdos). Para vuestros gastos os recomiendo usar la tarjeta Revolut, os la podéis sacar {" "}
+      <a
+        href="https://revolut.com/referral/?referral-code=rococf5mo!AUG2-25-AR&geo-redirect"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sky-600 font-semibold hover:text-sky-800 underline"
+      >
+         aquí  
+      </a> y os la mandan a casa. </p>
+    </>
+  ),
   commonFund: {
-    amount: "~200€",
-    intro: "Como ya sabéis tenemos un fondo común que se paga por Bizum al coordinador, quien es el responsable de gestionarlo.",
-    description: "Se usa para todos los gastos en los que participemos como grupo: entradas a los sitios de visita, transportes comunes, actividades extra y el fondo del coordinador.",
+    amount: "200€",
+    intro: "Como ya sabéis tenemos un fondo común que se paga en efectivo al coordinador el primer día de la llegada, quien es el responsable de gestionarlo.",
+    description: "Se usa para todos los gastos en los que participemos como grupo: entradas a los sitios de visita, transportes comunes, actividades extra y el fondo del coordinador. En caso de no usarse todo el fondo común, se repartirá la suma sobrante entre todos los participantes al final del viaje. Por otro lado, si se realizan más actividades de las previstas, se pedirá una suma mayor de fondo común.",
+    documento: (
+    <>
+      Podéis consultar en este el fondo común con los ingresos y gastos actualizados en este{" "}
+      <a
+        href="https://docs.google.com/spreadsheets/d/1kgX2Q5pr05eD3MKLQHRoMS_NtP6HIJD4/edit?usp=sharing&ouid=114359442271263270458&rtpof=true&sd=true"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sky-600 font-semibold hover:text-sky-800 underline"
+      >
+        link 
+      </a>
+       .
+    </>
+  ), 
   },
 };
 
 export const temperatura: Temperatura = {
     icono: "☀️",
-    grados: "25ºC - 30ºC",
+    grados: "Temperatura diurna: 27 °C – 30 °C",
     text: "Clima cálido todo el año con brisa marina constante."
 }
-  export const checklist: string[] = [
-    "Mochila o maleta mediana (las habitaciones pueden tener poco espacio).",
-    "Ropa de verano total, bañadores y ropa ligera.",
-    "Gorra o sombrero y gafas de sol.",
-    "Cortavientos o chaqueta fina (por la brisa nocturna).",
-    "Zapatillas cómodas y sandalias de playa.",
-    "Crema de sol +50 (¡el sol pega fuerte!).",
-    "Adaptador de enchufe tipo C/E/F (aunque los hoteles suelen tener europeos).",
-  ];
-
+export const checklist: string[] = [
+  "🎒 Mochila o maleta mediana (las habitaciones pueden tener poco espacio).",
+  "👕 Ropa de verano total, bañadores y ropa ligera.",
+  "🧢 Gorra o sombrero y gafas de sol.",
+  "🧣 Un pañuelo o buff para cubrirte la cara y protegerte de la arena durante la excursión en buggy.",
+  "👕 Ropa que pueda ensuciarse para la actividad en buggy.",
+  "👟 Escarpines o zapatillas de agua para la excursión por la isla (hay que caminar sobre rocas en la zona donde se observan los tiburones). También pueden alquilarse allí por unos 3 €.",
+  "👟 Zapatillas cómodas y sandalias de playa.",
+  "🧴 Crema de sol +50 (¡el sol pega fuerte!).",
+  "🔌 Se utilizan enchufes de tipo europeo, los mismos que en España, no necesario adaptador.",
+];
   export const meds: string[] = [
     "Ibuprofeno",
     "Paracetamol",
+    "Biodramina para el mareo",
     "Fortasec",
     "Suero Oral",
     "Antihistamínicos",

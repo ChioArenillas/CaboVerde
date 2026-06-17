@@ -1,5 +1,7 @@
 // --- TYPES ---
 
+import { ReactNode } from "react";
+
 export interface Tab {
   id: string;
   label: string;
@@ -35,7 +37,7 @@ export interface MoodItemData {
 
 export interface DocumentationItem {
   title: string;
-  desc: string;
+  desc: ReactNode;
 }
 
 export interface DocumentationData {
@@ -53,11 +55,12 @@ export interface AppsData {
 }
 export interface MoneyData{
   currency: string,
-    recommendation: string,
+    recommendation: ReactNode,
   commonFund: {
     amount: string,
     intro: string,
-    description: string
+    description: string,
+    documento: ReactNode
 }
 }
 

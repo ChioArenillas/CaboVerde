@@ -36,9 +36,9 @@ export default function App() {
             transition={{ duration: 0.3 }}
           >
             {activeTab === "inicio" && <InicioSection />}
+            {activeTab === "info" && <InfoSection />}
             {activeTab === "itinerario" && <ItinerarioSection />}
             {activeTab === "servicios" && <ServiciosSection />}
-            {activeTab === "info" && <InfoSection />}
             {activeTab === "equipaje" && <EquipajeSection />}
           </motion.div>
         </AnimatePresence>

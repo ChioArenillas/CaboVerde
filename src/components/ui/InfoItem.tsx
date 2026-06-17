@@ -1,14 +1,20 @@
+import { ReactNode } from "react";
 
 interface InfoItemProps {
   title: string;
-  desc: string;
+  desc: ReactNode;
 }
 
 export function InfoItem({ title, desc }: InfoItemProps) {
   return (
-    <div className="mb-4 last:mb-0">
-      <h4 className="font-bold text-gray-800 mb-1">{title}</h4>
-      <p className="text-gray-600 text-sm">{desc}</p>
+    <div className="space-y-1">
+      <h4 className="text-base font-bold text-gray-900">
+        {title}
+      </h4>
+
+      <div className="text-base text-gray-700 leading-relaxed">
+        {desc}
+      </div>
     </div>
   );
 }
