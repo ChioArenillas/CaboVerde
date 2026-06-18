@@ -49,7 +49,7 @@ export const itineraryData: ItineraryItem[] = [
   {
     day: "Domingo 19",
     title: "Santa Maria y sus playas",
-    desc: "Día de relax en la famosa playa de Santa Maria. Agua turquesa y arena blanca. Por la tarde, paseo por el pueblo y atardecer en el muelle.",
+    desc: "Tour de día completo por la isla. Agua turquesa y arena blanca. Por la tarde, paseo por el pueblo y atardecer en el muelle.",
   },
   {
     day: "Lunes 20",
@@ -59,18 +59,18 @@ export const itineraryData: ItineraryItem[] = [
   },
   {
     day: "Martes 21",
-    title: "Desierto de Viana y Naufragio",
-    desc: "Ruta en 4x4 por el Desierto de Viana, un paisaje lunar increíble. Visita al naufragio del barco Cabo Santa Maria. Atardecer en el desierto.",
+    title: "Excursión de snorkel",
+    desc: "",
   },
   {
     day: "Miércoles 22",
-    title: "Aventura o Relax",
-    desc: "Día libre para actividades opcionales: kitesurf, buceo, snorkel o simplemente disfrutar de la piscina y la playa. ¡Tú eliges!",
+    title: "Excursión en catamarán",
+    desc: "",
   },
   {
     day: "Jueves 23",
-    title: "Salinas de Pedra de Lume",
-    desc: "Excursión al cráter volcánico de Pedra de Lume. Flotaremos en sus aguas saladas. Por la tarde, tiempo libre para disfrutar de la playa.",
+    title: "Tiempo libre",
+    desc: "Día de actividades acuáticas, clase de surf/windsurf. Tarde de cata.",
   },
   {
     day: "Viernes 24",
