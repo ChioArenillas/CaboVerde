@@ -41,47 +41,46 @@ export const esfuerzo: Esfuerzo = {
 
 
 export const itineraryData: ItineraryItem[] = [
-  {
-    day: "Sábado 18",
-    title: "¡Bienvenidos a Sal!",
-    desc: "Llegada al aeropuerto de Sal. Traslado al hotel en Santa Maria. Welcome meeting y cena de bienvenida para conocernos.",
-  },
-  {
-    day: "Domingo 19",
-    title: "Santa Maria y sus playas",
-    desc: "Tour de día completo por la isla. Agua turquesa y arena blanca. Por la tarde, paseo por el pueblo y atardecer en el muelle.",
-  },
-  {
-    day: "Lunes 20",
-    title: "Ruta en Quad y Buracona",
-    desc: "Excursión en quad por la isla hasta la piscina natural de Buracona (Blue Eye). Almuerzo típico caboverdiano en un restaurante local.",
-
-  },
-  {
-    day: "Martes 21",
-    title: "Excursión de snorkel",
-    desc: "",
-  },
-  {
-    day: "Miércoles 22",
-    title: "Excursión en catamarán",
-    desc: "",
-  },
-  {
-    day: "Jueves 23",
-    title: "Tiempo libre",
-    desc: "Día de actividades acuáticas, clase de surf/windsurf. Tarde de cata.",
-  },
-  {
-    day: "Viernes 24",
-    title: "Playa, relax y compras",
-    desc: "Último día completo para disfrutar del mar, comprar recuerdos en el mercado de Santa Maria y preparar las maletas.",
-  },
-  {
-    day: "Sábado 25",
-    title: "Adiós Cabo Verde",
-    desc: "Último baño en el Atlántico si da tiempo, desayuno y traslado al aeropuerto. ¡Hasta la próxima aventura!",
-  },
+{
+day: "Sábado 18",
+title: "¡Bienvenidos a Sal!",
+desc: "Llegada al aeropuerto de Sal. Traslado al hotel en Santa Maria. Welcome meeting y cena de bienvenida para conocernos.",
+},
+{
+day: "Domingo 19",
+title: "Santa Maria y sus playas",
+desc: "Tour de día completo por la isla. Agua turquesa y arena blanca. Por la tarde, paseo por el pueblo y atardecer en el muelle.",
+},
+{
+day: "Lunes 20",
+title: "Ruta en Quad y Buracona",
+desc: "Excursión en quad por la isla hasta la piscina natural de Buracona (Blue Eye). Almuerzo típico caboverdiano en un restaurante local.",
+},
+{
+day: "Martes 21",
+title: "Excursión de snorkel",
+desc: "Salida en barco para descubrir los fondos marinos de Sal. Tiempo para hacer snorkel entre peces tropicales y disfrutar de las aguas cristalinas del Atlántico. Tarde libre para relajarse en la playa.",
+},
+{
+day: "Miércoles 22",
+title: "Excursión en catamarán",
+desc: "Navegación a bordo de un catamarán por la costa de la isla. Música, bebidas y paradas para darse un baño en mar abierto mientras disfrutamos de algunos de los paisajes más espectaculares de Cabo Verde.",
+},
+{
+day: "Jueves 23",
+title: "Tiempo libre",
+desc: "Día de actividades acuáticas, clase de surf o windsurf para quienes quieran probar algo nuevo. Por la tarde, cata especial para brindar por la experiencia compartida.",
+},
+{
+day: "Viernes 24",
+title: "Playa, relax y compras",
+desc: "Último día completo para disfrutar del mar, comprar recuerdos en el mercado de Santa Maria y preparar las maletas.",
+},
+{
+day: "Sábado 25",
+title: "Adiós Cabo Verde",
+desc: "Último baño en el Atlántico si da tiempo, desayuno y traslado al aeropuerto. ¡Hasta la próxima aventura!",
+},
 ];
 
 export const servicesData: ServiceItem[] = [
@@ -94,7 +93,7 @@ export const servicesData: ServiceItem[] = [
   },
   {
     day: "Domingo 19",
-    where: "Santa Maria",
+    where: "",
     service: "Excursión de día completo para visitar la isla con transporte.",
     meals: "Desayuno y Almuerzo",
     payment: "Incluido",
@@ -198,7 +197,7 @@ export const servicesData: ServiceItem[] = [
 
   {
     day: "Viernes 24",
-    where: "Santa Maria",
+    where: "",
     service: "Día libre / Relax / Compras",
     meals: "Desayuno",
     payment: "Incluido",
