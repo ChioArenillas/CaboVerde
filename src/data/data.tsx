@@ -147,7 +147,7 @@ export const servicesSummary: ServicesSummary = {
 
   extras: [
     {
-      title: "Excursiones opcionales adicionales",
+      title: "Actividades opcionales adicionales",
 
     },
     {
