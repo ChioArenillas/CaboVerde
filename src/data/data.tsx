@@ -133,17 +133,9 @@ export const servicesData: ServiceItem[] = [
     {
     day: "Martes 21",
     where: "",
-    service: "Clase de baile",
+    service: "Clase de baile tradicional",
     meals: "-",
     payment: "Fondo común",
-  },
-
-    {
-    day: "Martes 21",
-    where: "",
-    service: "Cóctel de bienvenida al atardecer",
-    meals: "-",
-    payment: "Incluido",
   },
       {
     day: "Martes 21",
@@ -161,6 +153,14 @@ export const servicesData: ServiceItem[] = [
     service: "Excursión de medio día en catamarán con transporte de ida y vuelta para el puerto y barra libre de bebidas y snack",
     meals: "Desayuno",
     payment: "Incluido",
+  },
+
+    {
+    day: "Miércoles 22",
+    where: "",
+    service: "Cena tradicional con show",
+    meals: "-",
+    payment: "Fondo común",
   },
         {
     day: "Miércoles 22",
@@ -181,7 +181,7 @@ export const servicesData: ServiceItem[] = [
   {
     day: "Jueves 23",
     where: "",
-    service: "Cata de 2 cervezas locales, 2 zumos naturales y 2 tapas",
+    service: "Cata de cervezas locales.",
     meals: "Desayuno",
     payment: "Incluido",
   },
