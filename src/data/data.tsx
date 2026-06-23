@@ -60,10 +60,10 @@ moneypot: "—",
 {
 day: "Lunes 20",
 title: "Aventura en Quad por Sal",
-desc: "Ruta en quad por la isla con parada en algunos de sus paisajes más emblemáticos, incluyendo la zona de Buracona.",
+desc: "Ruta en quad por la isla con parada en algunos de sus paisajes más emblemáticos, incluyendo la zona de Buracona. Posibilidad de avistamiento de tortugas poniendo nido.",
 where: "Buracona",
 included: "Desayuno",
-moneypot: "Excursión en Quad",
+moneypot: "Excursión en Quad, Anidación de tortugas",
 },
 {
 day: "Martes 21",
@@ -125,6 +125,10 @@ export const servicesSummary: ServicesSummary = {
       duration: "2h",
     },
     {
+      title: "Anidación de tortugas",
+      price: "30€ ",
+    },
+    {
       title: "Clase de baile tradicional",
       price: "15€ ",
       duration: "1:30h",
@@ -137,11 +141,7 @@ export const servicesSummary: ServicesSummary = {
       title: "Clases de surf o windsurf",
       price: "30€/35€",
       duration: "1h",
-    },
-    {
-      title: "Anidación de tortugas",
-      price: "30€ ",
-    },
+    }
 
   ],
 
