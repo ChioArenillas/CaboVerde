@@ -1,5 +1,5 @@
 
-import { AppsData, DocumentationData, Esfuerzo, ItineraryItem, MoneyData, MoodItemData, ServiceItem, Tab, Temperatura } from "@/types/types";
+import { AppsData, DocumentationData, Esfuerzo, ItineraryItem, MoneyData, MoodItemData, ServicesSummary, Tab, Temperatura } from "@/types/types";
 
 export const heroImage = "/embarcaciones-pequenas-agua-turquesa-cielo-nublado.jpg";
 
@@ -9,9 +9,9 @@ export const tripDates = "18 - 25 Julio 2026";
 
 export const tabs: Tab[] = [
   { id: "inicio", label: "Inicio", icon: "🏠" },
-  { id: "info", label: "Info Práctica", icon: "ℹ️" },
   { id: "itinerario", label: "Itinerario", icon: "🗺️" },
   { id: "servicios", label: "Servicios", icon: "🏨" },
+  { id: "info", label: "Info Práctica", icon: "ℹ️" },
   { id: "equipaje", label: "Equipaje", icon: "🎒" },
 ];
 
@@ -44,182 +44,98 @@ export const itineraryData: ItineraryItem[] = [
 {
 day: "Sábado 18",
 title: "¡Bienvenidos a Sal!",
-desc: "Llegada al aeropuerto de Sal. Traslado al hotel en Santa Maria. Welcome meeting y cena de bienvenida para conocernos.",
+desc: "Llegada al aeropuerto de Sal y traslado al hotel en Santa Maria. Tiempo para instalarse, conocer el entorno y comenzar la aventura en Cabo Verde.",
+where: "Santa Maria",
+included: "Alojamiento",
+moneypot: "—",
 },
 {
 day: "Domingo 19",
-title: "Santa Maria y sus playas",
-desc: "Tour de día completo por la isla. Agua turquesa y arena blanca. Por la tarde, paseo por el pueblo y atardecer en el muelle.",
+title: "Vuelta completa a la isla",
+desc: "Excursión de día completo para descubrir los principales atractivos de Sal con transporte incluido. Almuerzo durante la actividad y regreso a Santa Maria para disfrutar de la tarde.",
+where: "Isla de Sal",
+included: "Transporte, desayuno y almuerzo",
+moneypot: "—",
 },
 {
 day: "Lunes 20",
-title: "Ruta en Quad y Buracona",
-desc: "Excursión en quad por la isla hasta la piscina natural de Buracona (Blue Eye). Almuerzo típico caboverdiano en un restaurante local.",
+title: "Aventura en Quad por Sal",
+desc: "Ruta en quad por la isla con parada en algunos de sus paisajes más emblemáticos, incluyendo la zona de Buracona.",
+where: "Buracona",
+included: "Desayuno",
+moneypot: "Excursión en Quad",
 },
 {
 day: "Martes 21",
-title: "Excursión de snorkel",
-desc: "Salida en barco para descubrir los fondos marinos de Sal. Tiempo para hacer snorkel entre peces tropicales y disfrutar de las aguas cristalinas del Atlántico. Tarde libre para relajarse en la playa.",
+title: "Snorkel y cultura local",
+desc: "Excursión de esnórquel para descubrir la vida marina de Sal. Más tarde, clase de baile tradicional.",
+where: "Santa Maria",
+included: "Equipo de esnórquel",
+moneypot: "Clase de baile tradicional",
 },
 {
 day: "Miércoles 22",
-title: "Excursión en catamarán",
-desc: "Navegación a bordo de un catamarán por la costa de la isla. Música, bebidas y paradas para darse un baño en mar abierto mientras disfrutamos de algunos de los paisajes más espectaculares de Cabo Verde.",
+title: "Catamarán y cena con espectáculo",
+desc: "Excursión de medio día en catamarán con bebidas y snacks. Por la noche, cena tradicional con show.",
+where: "Santa Maria",
+included: "Desayuno, transporte, bebidas y snacks",
+moneypot: "Cena tradicional con show",
 },
 {
 day: "Jueves 23",
-title: "Tiempo libre",
-desc: "Día de actividades acuáticas, clase de surf o windsurf para quienes quieran probar algo nuevo. Por la tarde, cata especial para brindar por la experiencia compartida.",
+title: "Deportes acuáticos y sabores locales",
+desc: "Jornada de surf o windsurf y cata de cervezas locales.",
+where: "Santa Maria",
+included: "Desayuno y cata de cervezas",
+moneypot: "Surf / Windsurf",
 },
 {
 day: "Viernes 24",
-title: "Playa, relax y compras",
-desc: "Último día completo para disfrutar del mar, comprar recuerdos en el mercado de Santa Maria y preparar las maletas.",
+title: "Relax y despedida de Sal",
+desc: "Día libre para disfrutar de la playa, relajarse o realizar las últimas compras.",
+where: "Santa Maria",
+included: "Desayuno",
+moneypot: "Actividades opcionales",
 },
 {
 day: "Sábado 25",
-title: "Adiós Cabo Verde",
-desc: "Último baño en el Atlántico si da tiempo, desayuno y traslado al aeropuerto. ¡Hasta la próxima aventura!",
+title: "Hasta la próxima aventura",
+desc: "Desayuno y traslado al aeropuerto para el vuelo de regreso.",
+where: "Sal",
+included: "Desayuno",
+moneypot: "—",
 },
 ];
 
-export const servicesData: ServiceItem[] = [
-  {
-    day: "Sábado 18",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
-  {
-    day: "Domingo 19",
-    where: "",
-    service: "Excursión de día completo para visitar la isla con transporte.",
-    meals: "Desayuno y Almuerzo",
-    payment: "Incluido",
-  },
-  {
-    day: "Domingo 19",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
+export const servicesSummary: ServicesSummary = {
+  included: [
+    "7 noches de hotel en Santa Maria",
+    "Todos los desayunos",
+    "Excursión de día completo por la isla con transporte y almuerzo",
+    "Excursión de esnórquel con equipo incluido",
+    "Excursión en catamarán con barra libre de bebidas y snacks",
+    "Cata de cervezas locales",
+    "Seguro de viaje",
+  ],
 
+  moneypot: [
+    "Ruta en Quad por la isla",
+    "Clase de baile tradicional",
+    "Cena tradicional con show",
+    "Clases de surf o windsurf",
+  ],
 
-  {
-    day: "Lunes 20",
-    where: "Buracona",
-    service: "Ruta en Quad por la isla",
-    meals: "Desayuno",
-    payment: "Fondo común",
-  },
-    {
-    day: "Lunes 20",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
+  extras: [
+    "Excursiones opcionales adicionales",
+    "Actividades nocturnas",
+  ],
 
-
-  {
-    day: "Martes 21",
-    where: "",
-    service: "Excursión de esnórquel con equipo de esnórquel",
-    meals: "-",
-    payment: "Incluido",
-  },
-    {
-    day: "Martes 21",
-    where: "",
-    service: "Clase de baile tradicional",
-    meals: "-",
-    payment: "Fondo común",
-  },
-      {
-    day: "Martes 21",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
-
-
-
-  {
-    day: "Miércoles 22",
-    where: "",
-    service: "Excursión de medio día en catamarán con transporte de ida y vuelta para el puerto y barra libre de bebidas y snack",
-    meals: "Desayuno",
-    payment: "Incluido",
-  },
-
-    {
-    day: "Miércoles 22",
-    where: "",
-    service: "Cena tradicional con show",
-    meals: "-",
-    payment: "Fondo común",
-  },
-        {
-    day: "Miércoles 22",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
-
-
-  {
-    day: "Jueves 23",
-    where: "",
-    service: "Clases de surf/windsurf",
-    meals: "-",
-    payment: "Fondo común",
-  },
-  {
-    day: "Jueves 23",
-    where: "",
-    service: "Cata de cervezas locales.",
-    meals: "Desayuno",
-    payment: "Incluido",
-  },
-          {
-    day: "Jueves 23",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
-
-
-
-  {
-    day: "Viernes 24",
-    where: "",
-    service: "Día libre / Relax / Compras",
-    meals: "Desayuno",
-    payment: "Incluido",
-  },
-            {
-    day: "Viernes 24",
-    where: "Santa Maria",
-    service: "Noche de hotel",
-    meals: "-",
-    payment: "Incluido",
-  },
-
-
-
-  {
-    day: "Sábado 25",
-    where: "",
-    service: "Despedida y fin del viaje",
-    meals: "Desayuno",
-    payment: "Incluido",
-  },
-];
+  notIncluded: [
+    "Vuelos internacionales",
+    "Comidas y bebidas no especificadas",
+    "Gastos personales y compras",
+  ],
+};
 
 export const documentationData: DocumentationData = {
   documentation: [

@@ -15,17 +15,18 @@ export interface Esfuerzo  {
 }
 
 export interface ItineraryItem {
-  day: string;
-  title: string;
-  desc: string;
+day: string;
+title: string;
+desc: string;
+where: string;
+included: string;
+moneypot: string;
 }
-
-export interface ServiceItem {
-  day: string;
-  where: string;
-  service: string;
-  meals: string;
-  payment: "Incluido" | "Fondo común";
+export interface ServicesSummary {
+  included: string[];
+  moneypot: string[];
+  extras: string[];
+  notIncluded: string[];
 }
 
 export interface MoodItemData {

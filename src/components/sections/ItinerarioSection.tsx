@@ -20,7 +20,6 @@ export function ItinerarioSection() {
         </p>
       </div>
 
-
       <div className="relative border-l-4 border-sky-300 ml-4 md:ml-6 space-y-8">
         {itineraryData.map((item, index) => (
           <motion.div
@@ -39,6 +38,21 @@ export function ItinerarioSection() {
               </div>
               <h3 className="text-lg font-bold text-gray-800">{item.title}</h3>
               <p className="text-gray-600 mt-2 leading-relaxed">{item.desc}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-medium">
+                  📍 {item.where}
+                </span>
+
+                <span className="px-3 py-1 rounded-full bg-green-50 text-green-700 text-xs font-medium">
+                  ✅ Incluido: {item.included}
+                </span>
+
+                {item.moneypot !== "—" && (
+                  <span className="px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-medium">
+                    💸 Fondo común: {item.moneypot}
+                  </span>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}
