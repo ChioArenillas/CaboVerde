@@ -109,34 +109,59 @@ moneypot: "—",
 
 export const servicesSummary: ServicesSummary = {
   included: [
-    "7 noches de hotel en Santa Maria",
-    "Todos los desayunos",
-    "Excursión de día completo por la isla con transporte y almuerzo",
-    "Excursión de esnórquel con equipo incluido",
-    "Excursión en catamarán con barra libre de bebidas y snacks",
-    "Cata de cervezas locales",
-    "Seguro de viaje",
+    { title: "7 noches de hotel en Santa Maria" },
+    { title: "Todos los desayunos" },
+    { title: "Excursión de día completo por la isla con transporte y almuerzo" },
+    { title: "Excursión de esnórquel con equipo incluido" },
+    { title: "Excursión en catamarán con barra libre de bebidas y snacks" },
+    { title: "Cata de cervezas locales" },
+    { title: "Seguro de viaje" },
   ],
 
   moneypot: [
-    "Ruta en Quad por la isla",
-    "Clase de baile tradicional",
-    "Cena tradicional con show",
-    "Clases de surf o windsurf",
+    {
+      title: "Ruta en Quad por la isla",
+      price: "50€",
+      duration: "2h",
+    },
+    {
+      title: "Clase de baile tradicional",
+      price: "15€ ",
+      duration: "1:30h",
+    },
+    {
+      title: "Cena tradicional con show",
+      price: "30€ ",
+    },
+    {
+      title: "Clases de surf o windsurf",
+      price: "30€/35€",
+      duration: "1h",
+    },
+    {
+      title: "Anidación de tortugas",
+      price: "30€ ",
+    },
+
   ],
 
   extras: [
-    "Excursiones opcionales adicionales",
-    "Actividades nocturnas",
+    {
+      title: "Excursiones opcionales adicionales",
+
+    },
+    {
+      title: "Actividades nocturnas",
+
+    },
   ],
 
   notIncluded: [
-    "Vuelos internacionales",
-    "Comidas y bebidas no especificadas",
-    "Gastos personales y compras",
+    { title: "Vuelos internacionales" },
+    { title: "Comidas y bebidas no especificadas" },
+    { title: "Gastos personales y compras" },
   ],
 };
-
 export const documentationData: DocumentationData = {
   documentation: [
     {

@@ -22,13 +22,32 @@ where: string;
 included: string;
 moneypot: string;
 }
-export interface ServicesSummary {
-  included: string[];
-  moneypot: string[];
-  extras: string[];
-  notIncluded: string[];
+export interface IncludedItem {
+  title: string;
 }
 
+export interface MoneyPotItem {
+  title: string;
+  price: string;
+  duration?: string;
+}
+
+export interface ExtrasItem {
+  title: string;
+  price?: string;
+  duration?: string;
+}
+
+export interface NotIncludedItem {
+  title: string;
+}
+
+export interface ServicesSummary {
+  included: IncludedItem[];
+  moneypot: MoneyPotItem[];
+  extras: ExtrasItem[];
+  notIncluded: NotIncludedItem[];
+}
 export interface MoodItemData {
   icon: string;
   title: string;
