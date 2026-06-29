@@ -45,7 +45,7 @@ https://cabo-verde.vercel.app/
 
 ```bash
 git clone https://github.com/ChioArenillas/CaboVerde
-cd HireFlow
+cd CaboVerde
 npm install
 npm run dev
 ```
