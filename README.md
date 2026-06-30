@@ -10,6 +10,7 @@ The project focuses on creating an intuitive user experience, allowing participa
 
 ## 🚀 Live Demo
 
+https://cabo-verde.vercel.app/
 
 ## 🚀 Technologies
 
@@ -43,8 +44,8 @@ The project focuses on creating an intuitive user experience, allowing participa
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/ChioArenillas/Srilanka
-cd Srilanka
+git clone https://github.com/ChioArenillas/CaboVerde
+cd CaboVerde
 npm install
 npm run dev
 ```
