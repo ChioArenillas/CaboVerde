@@ -10,7 +10,6 @@ The project focuses on creating an intuitive user experience, allowing participa
 
 ## 🚀 Live Demo
 
-https://cabo-verde.vercel.app/
 
 ## 🚀 Technologies
 
@@ -44,8 +43,8 @@ https://cabo-verde.vercel.app/
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/ChioArenillas/CaboVerde
-cd HireFlow
+git clone https://github.com/ChioArenillas/Srilanka
+cd Srilanka
 npm install
 npm run dev
 ```
