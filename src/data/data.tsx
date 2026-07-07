@@ -269,6 +269,7 @@ export const checklist: string[] = [
   "👟 Zapatillas cómodas y sandalias de playa.",
   "🧴 Crema de sol +50 (¡el sol pega fuerte!).",
   "🔌 Se utilizan enchufes de tipo europeo, los mismos que en España, no necesario adaptador.",
+  "🧼 En el hotel hay gel, toalla y secador de pelo, pero no champú!"
 ];
   export const meds: string[] = [
     "Ibuprofeno",

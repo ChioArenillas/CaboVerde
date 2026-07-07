@@ -89,7 +89,7 @@ export function InfoSection() {
         </p>
       </Card>
 
-      <Card title="📸 Permisos fotos/vídeo publicidad">
+      {/* <Card title="📸 Permisos fotos/vídeo publicidad">
         <p>
           Yo en todos los viajes suelo mandar después fotos y vídeos de grupo o
           del viaje que a veces weroad usa para publi, para la web o IG y cosas
@@ -111,7 +111,7 @@ export function InfoSection() {
   >
     📄 Descargar documento
   </a>
-      </Card>
+      </Card> */}
     </div>
   );
 }
